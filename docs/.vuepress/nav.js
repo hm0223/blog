@@ -2,19 +2,19 @@ module.exports = [
 
     // 显示在左上角下拉列表中的条目数据
     {
-        text: 'Java基础',
+        text: 'Java Base',
         items: [
-          {text: '并发', link: '/java/juc/'},
+          {text: 'JUC', link: '/java/juc/'},
           {text: 'NIO', link: '/java/nio/'},
           {text: 'JVM', link: '/java/jvm/'},
           {text: 'JDK', link: '/java/jdk-features/'},
-          {text: '工具', link: '/java/tools/'},
-          {text: '数据结构/算法', link: '/java/data-structures-algorithms/'},
-          {text: '设计模式', link: '/java/design-pattern/'},
+          {text: 'Tools', link: '/java/tools/'},
+          {text: 'Data Structures/Algorithm', link: '/java/data-structures-algorithms/'},
+          {text: 'Design Pattern', link: '/java/design-pattern/'},
         ]
       },
       {
-        text: 'Java框架',
+        text: 'Java Frameworks',
         items: [
           {text: 'Spring', link: '/java/frameworks-java/spring/'},
           {text: 'Spring MVC', link: '/java/frameworks-java/spring-mvc/'},
@@ -23,7 +23,7 @@ module.exports = [
         ]
       },
       {
-        text: '微服务',
+        text: 'Microservice',
         items: [
           {text: 'Dubbo', link: '/java/micro-service/dubbo/'},
           {text: 'SpringCloud', link: '/java/micro-service/spring-cloud/'},
@@ -32,7 +32,7 @@ module.exports = [
         ]
       },
       {
-        text: '数据库',
+        text: 'Database',
         items: [
             {text: 'MySQL', link: '/db/mysql/'},
             {text: 'Redis', link: '/db/redis/'},
@@ -41,7 +41,7 @@ module.exports = [
         ]
       },
       {
-        text: '中间件',
+        text: 'Middleware',
         items: [
           {text: 'Job', link: '/middle-ware/job/'},
           {text: 'Mq', link: '/middle-ware/mq/'},
@@ -56,7 +56,7 @@ module.exports = [
         ]
       },
       {
-        text: '前端',
+        text: 'Frontend',
         items: [
           {text: 'Samples', link: '/front-end/'},
         ]

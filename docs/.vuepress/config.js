@@ -1,13 +1,29 @@
+// module.exports = {
+//   title: 'I asked if you were learning',
+//   head: [
+//      ['link', {rel: 'icon', href: '/img/icon.jpg'}],
+//      ['link', {rel: 'stylesheet', href: '/css/style.css'}],
+//   ],
+//   base: '/blog/' ,
+//   description: 'A little off, a little off',
+//   themeConfig: {
+//     nav: require('./nav'),
+//     sidebar: require('./sidebar')	
+//   }
+// }
+
+// .vuepress/config.js
 module.exports = {
-  title: '就问你学不学',
+  title: "hwf's blog", // Title for the site. This will be displayed in the navbar.
   head: [
-     ['link', {rel: 'icon', href: '/img/icon.jpg'}],
-     ['link', {rel: 'stylesheet', href: '/css/style.css'}],
+    ['link', {rel: 'icon', href: '/img/icon.jpg'}],
+    ['link', {rel: 'stylesheet', href: '/css/style.css'}],
   ],
+  theme: '@vuepress/theme-blog',
   base: '/blog/' ,
-  description: '一时不学一时爽 一直不学一直爽',
   themeConfig: {
-    nav: require('./nav'),
-    sidebar: require('./sidebar')	
+    // Please keep looking down to see the available options.
+    // nav: require('./nav'),
+    // sidebar: require('./sidebar')
   }
 }

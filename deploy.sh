@@ -26,7 +26,7 @@ git commit -m $1
 # 如果发布到 https://USERNAME.github.io/<REPO>  REPO=github上的项目
 
 #git push -f https://github.com/hm0223/blog.git master
-git push -f git@github.com:hm0223/blog.git master
+git push -f git@github.com:hm0223/blog.git master:gh-pages
 
 #git remote add origin git@github.com:hm0223/blog.git
 #git push -u origin master
