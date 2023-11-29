@@ -20,10 +20,10 @@ jobs:
           cache: npm
       - run: npm install --frozen-lockfile
       # 拉取代码
-#      - name: Checkout
-#        uses: actions/checkout@v2
-#        with:
-#          persist-credentials: false
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
 
       # 生成静态文件
       - name: Build
