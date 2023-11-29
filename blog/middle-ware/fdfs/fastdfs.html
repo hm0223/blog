@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>FastDFS | 就问你学不学</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/blog/img/icon.jpg">
+    <link rel="stylesheet" href="/blog/css/style.css">
+    <meta name="description" content="一时不学一时爽 一直不学一直爽">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.b6bfb1ac.css" as="style"><link rel="preload" href="/blog/assets/js/app.b9273b31.js" as="script"><link rel="preload" href="/blog/assets/js/2.a919457f.js" as="script"><link rel="preload" href="/blog/assets/js/127.6477f5d9.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.eb409e88.js"><link rel="prefetch" href="/blog/assets/js/100.3f217fe9.js"><link rel="prefetch" href="/blog/assets/js/101.9d14667a.js"><link rel="prefetch" href="/blog/assets/js/102.151ebd39.js"><link rel="prefetch" href="/blog/assets/js/103.e9ed74d9.js"><link rel="prefetch" href="/blog/assets/js/104.20e3eadd.js"><link rel="prefetch" href="/blog/assets/js/105.0dc8af45.js"><link rel="prefetch" href="/blog/assets/js/106.4207c5e2.js"><link rel="prefetch" href="/blog/assets/js/107.89e638be.js"><link rel="prefetch" href="/blog/assets/js/108.0d43e966.js"><link rel="prefetch" href="/blog/assets/js/109.ce709703.js"><link rel="prefetch" href="/blog/assets/js/11.1b1fddca.js"><link rel="prefetch" href="/blog/assets/js/110.abca37bd.js"><link rel="prefetch" href="/blog/assets/js/111.be864651.js"><link rel="prefetch" href="/blog/assets/js/112.47fff443.js"><link rel="prefetch" href="/blog/assets/js/113.01d464c2.js"><link rel="prefetch" href="/blog/assets/js/114.799c62ad.js"><link rel="prefetch" href="/blog/assets/js/115.6362b5b2.js"><link rel="prefetch" href="/blog/assets/js/116.47871bc2.js"><link rel="prefetch" href="/blog/assets/js/117.eb0fc6e0.js"><link rel="prefetch" href="/blog/assets/js/118.afcec2d0.js"><link rel="prefetch" href="/blog/assets/js/119.21a98557.js"><link rel="prefetch" href="/blog/assets/js/12.83d42d92.js"><link rel="prefetch" href="/blog/assets/js/120.483936f4.js"><link rel="prefetch" href="/blog/assets/js/121.cd1fd957.js"><link rel="prefetch" href="/blog/assets/js/122.cb17a43a.js"><link rel="prefetch" href="/blog/assets/js/123.e96508d2.js"><link rel="prefetch" href="/blog/assets/js/124.2aa20394.js"><link rel="prefetch" href="/blog/assets/js/125.9dfd6574.js"><link rel="prefetch" href="/blog/assets/js/126.1d173adc.js"><link rel="prefetch" href="/blog/assets/js/128.c9084433.js"><link rel="prefetch" href="/blog/assets/js/129.6865344d.js"><link rel="prefetch" href="/blog/assets/js/13.e03d44f0.js"><link rel="prefetch" href="/blog/assets/js/130.58150bfd.js"><link rel="prefetch" href="/blog/assets/js/131.4a8a7af2.js"><link rel="prefetch" href="/blog/assets/js/132.16a8c34a.js"><link rel="prefetch" href="/blog/assets/js/133.2a5afa49.js"><link rel="prefetch" href="/blog/assets/js/14.b7938acc.js"><link rel="prefetch" href="/blog/assets/js/15.fb1b5215.js"><link rel="prefetch" href="/blog/assets/js/16.07c91246.js"><link rel="prefetch" href="/blog/assets/js/17.095f5a4f.js"><link rel="prefetch" href="/blog/assets/js/18.0e408f20.js"><link rel="prefetch" href="/blog/assets/js/19.5a9e5b3b.js"><link rel="prefetch" href="/blog/assets/js/20.906cae4f.js"><link rel="prefetch" href="/blog/assets/js/21.1dc6915d.js"><link rel="prefetch" href="/blog/assets/js/22.13df625f.js"><link rel="prefetch" href="/blog/assets/js/23.c32f30b3.js"><link rel="prefetch" href="/blog/assets/js/24.72446997.js"><link rel="prefetch" href="/blog/assets/js/25.a07ab2ce.js"><link rel="prefetch" href="/blog/assets/js/26.2e68d76c.js"><link rel="prefetch" href="/blog/assets/js/27.e22085be.js"><link rel="prefetch" href="/blog/assets/js/28.14b0546a.js"><link rel="prefetch" href="/blog/assets/js/29.a597cd38.js"><link rel="prefetch" href="/blog/assets/js/3.5b997c96.js"><link rel="prefetch" href="/blog/assets/js/30.21fd2f6b.js"><link rel="prefetch" href="/blog/assets/js/31.0afa085e.js"><link rel="prefetch" href="/blog/assets/js/32.617af259.js"><link rel="prefetch" href="/blog/assets/js/33.fb25f6ab.js"><link rel="prefetch" href="/blog/assets/js/34.eab36e97.js"><link rel="prefetch" href="/blog/assets/js/35.e0e42f28.js"><link rel="prefetch" href="/blog/assets/js/36.5bf5c02a.js"><link rel="prefetch" href="/blog/assets/js/37.58673278.js"><link rel="prefetch" href="/blog/assets/js/38.21ad9984.js"><link rel="prefetch" href="/blog/assets/js/39.6ff55661.js"><link rel="prefetch" href="/blog/assets/js/4.d6cdcb57.js"><link rel="prefetch" href="/blog/assets/js/40.2cba54e2.js"><link rel="prefetch" href="/blog/assets/js/41.84a20a21.js"><link rel="prefetch" href="/blog/assets/js/42.b3a29123.js"><link rel="prefetch" href="/blog/assets/js/43.e8cdae99.js"><link rel="prefetch" href="/blog/assets/js/44.1df00f15.js"><link rel="prefetch" href="/blog/assets/js/45.fe00ab2d.js"><link rel="prefetch" href="/blog/assets/js/46.2d367baa.js"><link rel="prefetch" href="/blog/assets/js/47.9fcd558a.js"><link rel="prefetch" href="/blog/assets/js/48.46e2e035.js"><link rel="prefetch" href="/blog/assets/js/49.0092130e.js"><link rel="prefetch" href="/blog/assets/js/5.4f712cfc.js"><link rel="prefetch" href="/blog/assets/js/50.1a0ae5e3.js"><link rel="prefetch" href="/blog/assets/js/51.ec37e7db.js"><link rel="prefetch" href="/blog/assets/js/52.dbcc032f.js"><link rel="prefetch" href="/blog/assets/js/53.2332a201.js"><link rel="prefetch" href="/blog/assets/js/54.b5029957.js"><link rel="prefetch" href="/blog/assets/js/55.8c6b22f7.js"><link rel="prefetch" href="/blog/assets/js/56.abd4bb82.js"><link rel="prefetch" href="/blog/assets/js/57.bd7b8633.js"><link rel="prefetch" href="/blog/assets/js/58.f724aa6a.js"><link rel="prefetch" href="/blog/assets/js/59.3475e7b8.js"><link rel="prefetch" href="/blog/assets/js/6.d7e152ce.js"><link rel="prefetch" href="/blog/assets/js/60.058714d1.js"><link rel="prefetch" href="/blog/assets/js/61.0740b5c3.js"><link rel="prefetch" href="/blog/assets/js/62.4f184bd7.js"><link rel="prefetch" href="/blog/assets/js/63.7a9d91cc.js"><link rel="prefetch" href="/blog/assets/js/64.c28388ea.js"><link rel="prefetch" href="/blog/assets/js/65.8a5b1276.js"><link rel="prefetch" href="/blog/assets/js/66.4aecce48.js"><link rel="prefetch" href="/blog/assets/js/67.8f7c754e.js"><link rel="prefetch" href="/blog/assets/js/68.f9bbebe3.js"><link rel="prefetch" href="/blog/assets/js/69.50649a9a.js"><link rel="prefetch" href="/blog/assets/js/7.184419e9.js"><link rel="prefetch" href="/blog/assets/js/70.ac56aedb.js"><link rel="prefetch" href="/blog/assets/js/71.6e53863b.js"><link rel="prefetch" href="/blog/assets/js/72.f1f01011.js"><link rel="prefetch" href="/blog/assets/js/73.f6598b47.js"><link rel="prefetch" href="/blog/assets/js/74.59684f4d.js"><link rel="prefetch" href="/blog/assets/js/75.0f462117.js"><link rel="prefetch" href="/blog/assets/js/76.63c07c20.js"><link rel="prefetch" href="/blog/assets/js/77.7ebba5a9.js"><link rel="prefetch" href="/blog/assets/js/78.3eb62203.js"><link rel="prefetch" href="/blog/assets/js/79.4c3b40cd.js"><link rel="prefetch" href="/blog/assets/js/8.3ebbe8ad.js"><link rel="prefetch" href="/blog/assets/js/80.1029dfc9.js"><link rel="prefetch" href="/blog/assets/js/81.4280cfe1.js"><link rel="prefetch" href="/blog/assets/js/82.e394188e.js"><link rel="prefetch" href="/blog/assets/js/83.9f6a27c1.js"><link rel="prefetch" href="/blog/assets/js/84.e177487a.js"><link rel="prefetch" href="/blog/assets/js/85.14a2fa85.js"><link rel="prefetch" href="/blog/assets/js/86.21677160.js"><link rel="prefetch" href="/blog/assets/js/87.a41d1d08.js"><link rel="prefetch" href="/blog/assets/js/88.7f89fdac.js"><link rel="prefetch" href="/blog/assets/js/89.7cbf54ff.js"><link rel="prefetch" href="/blog/assets/js/9.c1afbadb.js"><link rel="prefetch" href="/blog/assets/js/90.8cc35a1e.js"><link rel="prefetch" href="/blog/assets/js/91.db52b1bc.js"><link rel="prefetch" href="/blog/assets/js/92.90db4ded.js"><link rel="prefetch" href="/blog/assets/js/93.01cd5a5d.js"><link rel="prefetch" href="/blog/assets/js/94.4c42d5b5.js"><link rel="prefetch" href="/blog/assets/js/95.012d67a2.js"><link rel="prefetch" href="/blog/assets/js/96.70211961.js"><link rel="prefetch" href="/blog/assets/js/97.12d99977.js"><link rel="prefetch" href="/blog/assets/js/98.7db8c36f.js"><link rel="prefetch" href="/blog/assets/js/99.b02ac7a0.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.b6bfb1ac.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">就问你学不学</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Java基础" class="dropdown-title"><span class="title">Java基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="Java基础" class="mobile-dropdown-title"><span class="title">Java基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/java/juc/" class="nav-link">
+  并发
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/nio/" class="nav-link">
+  NIO
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/jvm/" class="nav-link">
+  JVM
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/jdk-features/" class="nav-link">
+  JDK
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/tools/" class="nav-link">
+  工具
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/data-structures-algorithms/" class="nav-link">
+  数据结构/算法
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/design-pattern/" class="nav-link">
+  设计模式
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Java框架" class="dropdown-title"><span class="title">Java框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="Java框架" class="mobile-dropdown-title"><span class="title">Java框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/java/frameworks-java/spring/" class="nav-link">
+  Spring
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/frameworks-java/spring-mvc/" class="nav-link">
+  Spring MVC
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/frameworks-java/mybatis/" class="nav-link">
+  Mybatis
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/frameworks-java/spring-boot/" class="nav-link">
+  SpringBoot
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="微服务" class="dropdown-title"><span class="title">微服务</span> <span class="arrow down"></span></button> <button type="button" aria-label="微服务" class="mobile-dropdown-title"><span class="title">微服务</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/java/micro-service/dubbo/" class="nav-link">
+  Dubbo
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/micro-service/spring-cloud/" class="nav-link">
+  SpringCloud
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/micro-service/zookeeper/" class="nav-link">
+  Zookeeper
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/micro-service/netty/" class="nav-link">
+  Netty
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/db/mysql/" class="nav-link">
+  MySQL
+</a></li><li class="dropdown-item"><!----> <a href="/blog/db/redis/" class="nav-link">
+  Redis
+</a></li><li class="dropdown-item"><!----> <a href="/blog/db/mongodb/" class="nav-link">
+  Mongodb
+</a></li><li class="dropdown-item"><!----> <a href="/blog/db/es/" class="nav-link">
+  Elasticsearch
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="中间件" class="dropdown-title"><span class="title">中间件</span> <span class="arrow down"></span></button> <button type="button" aria-label="中间件" class="mobile-dropdown-title"><span class="title">中间件</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/middle-ware/job/" class="nav-link">
+  Job
+</a></li><li class="dropdown-item"><!----> <a href="/blog/middle-ware/mq/" class="nav-link">
+  Mq
+</a></li><li class="dropdown-item"><!----> <a href="/blog/middle-ware/fdfs/" class="nav-link router-link-active">
+  分布式文件系统
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Linux" class="dropdown-title"><span class="title">Linux</span> <span class="arrow down"></span></button> <button type="button" aria-label="Linux" class="mobile-dropdown-title"><span class="title">Linux</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/linux/vim/" class="nav-link">
+  Vim
+</a></li><li class="dropdown-item"><!----> <a href="/blog/linux/shell/" class="nav-link">
+  Shell
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/front-end/" class="nav-link">
+  Samples
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/hm0223/blog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://gitee.com/hm223/blog-all" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Java基础" class="dropdown-title"><span class="title">Java基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="Java基础" class="mobile-dropdown-title"><span class="title">Java基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/java/juc/" class="nav-link">
+  并发
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/nio/" class="nav-link">
+  NIO
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/jvm/" class="nav-link">
+  JVM
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/jdk-features/" class="nav-link">
+  JDK
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/tools/" class="nav-link">
+  工具
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/data-structures-algorithms/" class="nav-link">
+  数据结构/算法
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/design-pattern/" class="nav-link">
+  设计模式
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Java框架" class="dropdown-title"><span class="title">Java框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="Java框架" class="mobile-dropdown-title"><span class="title">Java框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/java/frameworks-java/spring/" class="nav-link">
+  Spring
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/frameworks-java/spring-mvc/" class="nav-link">
+  Spring MVC
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/frameworks-java/mybatis/" class="nav-link">
+  Mybatis
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/frameworks-java/spring-boot/" class="nav-link">
+  SpringBoot
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="微服务" class="dropdown-title"><span class="title">微服务</span> <span class="arrow down"></span></button> <button type="button" aria-label="微服务" class="mobile-dropdown-title"><span class="title">微服务</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/java/micro-service/dubbo/" class="nav-link">
+  Dubbo
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/micro-service/spring-cloud/" class="nav-link">
+  SpringCloud
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/micro-service/zookeeper/" class="nav-link">
+  Zookeeper
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/micro-service/netty/" class="nav-link">
+  Netty
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/db/mysql/" class="nav-link">
+  MySQL
+</a></li><li class="dropdown-item"><!----> <a href="/blog/db/redis/" class="nav-link">
+  Redis
+</a></li><li class="dropdown-item"><!----> <a href="/blog/db/mongodb/" class="nav-link">
+  Mongodb
+</a></li><li class="dropdown-item"><!----> <a href="/blog/db/es/" class="nav-link">
+  Elasticsearch
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="中间件" class="dropdown-title"><span class="title">中间件</span> <span class="arrow down"></span></button> <button type="button" aria-label="中间件" class="mobile-dropdown-title"><span class="title">中间件</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/middle-ware/job/" class="nav-link">
+  Job
+</a></li><li class="dropdown-item"><!----> <a href="/blog/middle-ware/mq/" class="nav-link">
+  Mq
+</a></li><li class="dropdown-item"><!----> <a href="/blog/middle-ware/fdfs/" class="nav-link router-link-active">
+  分布式文件系统
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Linux" class="dropdown-title"><span class="title">Linux</span> <span class="arrow down"></span></button> <button type="button" aria-label="Linux" class="mobile-dropdown-title"><span class="title">Linux</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/linux/vim/" class="nav-link">
+  Vim
+</a></li><li class="dropdown-item"><!----> <a href="/blog/linux/shell/" class="nav-link">
+  Shell
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/front-end/" class="nav-link">
+  Samples
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/hm0223/blog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://gitee.com/hm223/blog-all" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>分布式文件系统</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/middle-ware/fdfs/fastdfs.html" aria-current="page" class="active sidebar-link">FastDFS</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/middle-ware/fdfs/fastdfs.html#_1-什么是分布式文件系统" class="sidebar-link">1.什么是分布式文件系统</a></li><li class="sidebar-sub-header"><a href="/blog/middle-ware/fdfs/fastdfs.html#_2-什么是fastdfs" class="sidebar-link">2.什么是FastDFS</a></li><li class="sidebar-sub-header"><a href="/blog/middle-ware/fdfs/fastdfs.html#_3-fastdfs的架构" class="sidebar-link">3.FastDFS的架构</a></li><li class="sidebar-sub-header"><a href="/blog/middle-ware/fdfs/fastdfs.html#_4-安装和使用" class="sidebar-link">4.安装和使用</a></li><li class="sidebar-sub-header"><a href="/blog/middle-ware/fdfs/fastdfs.html#_5-java客户端" class="sidebar-link">5.java客户端</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="fastdfs"><a href="#fastdfs" class="header-anchor">#</a> FastDFS</h1> <h2 id="_1-什么是分布式文件系统"><a href="#_1-什么是分布式文件系统" class="header-anchor">#</a> 1.什么是分布式文件系统</h2> <p>分布式文件系统（Distributed File System）是指文件系统管理的物理存储资源不一定直接连接在本地节点上，而是通过计算机网络与节点相连。</p> <p>通俗来讲：</p> <ul><li>传统文件系统管理的文件就存储在本机。</li> <li>分布式文件系统管理的文件存储在很多机器，这些机器通过网络连接，要被统一管理。无论是上传或者访问文件，都需要通过管理中心来访问</li></ul> <h2 id="_2-什么是fastdfs"><a href="#_2-什么是fastdfs" class="header-anchor">#</a> 2.什么是FastDFS</h2> <p>FastDFS是由淘宝的余庆先生所开发的一个轻量级、高性能的开源分布式文件系统。用纯C语言开发，功能丰富：</p> <ul><li>文件存储</li> <li>文件同步</li> <li>文件访问（上传、下载）</li> <li>存取负载均衡</li> <li>在线扩容</li></ul> <p>适合有大容量存储需求的应用或系统。同类的分布式文件系统有谷歌的GFS、HDFS（Hadoop）、TFS（淘宝）等。</p> <h2 id="_3-fastdfs的架构"><a href="#_3-fastdfs的架构" class="header-anchor">#</a> 3.FastDFS的架构</h2> <h3 id="_3-1-架构图"><a href="#_3-1-架构图" class="header-anchor">#</a> 3.1.架构图</h3> <p>先上图：</p> <p><img src="/v-blog/img/middle-ware/fastdfs/1526205318630.png" alt="1526205318630"></p> <p>FastDFS两个主要的角色：Tracker Server 和 Storage Server 。</p> <ul><li>Tracker Server：跟踪服务器，主要负责调度storage节点与client通信，在访问上起负载均衡的作用，和记录storage节点的运行状态，是连接client和storage节点的枢纽。</li> <li>Storage Server：存储服务器，保存文件和文件的meta data（元数据），每个storage server会启动一个单独的线程主动向Tracker cluster中每个tracker server报告其状态信息，包括磁盘使用情况，文件同步情况及文件上传下载次数统计等信息</li> <li>Group：文件组，多台Storage Server的集群。上传一个文件到同组内的一台机器上后，FastDFS会将该文件即时同步到同组内的其它所有机器上，起到备份的作用。不同组的服务器，保存的数据不同，而且相互独立，不进行通信。</li> <li>Tracker Cluster：跟踪服务器的集群，有一组Tracker Server（跟踪服务器）组成。</li> <li>Storage Cluster ：存储集群，有多个Group组成。</li></ul> <h3 id="_3-2-上传和下载流程"><a href="#_3-2-上传和下载流程" class="header-anchor">#</a> 3.2.上传和下载流程</h3> <blockquote><p>上传</p></blockquote> <p><img src="/v-blog/img/middle-ware/fastdfs/1526205664373.png" alt="1526205664373"></p> <ol><li>Client通过Tracker server查找可用的Storage server。</li> <li>Tracker server向Client返回一台可用的Storage server的IP地址和端口号。</li> <li>Client直接通过Tracker server返回的IP地址和端口与其中一台Storage server建立连接并进行文件上传。</li> <li>上传完成，Storage server返回Client一个文件ID，文件上传结束。</li></ol> <blockquote><p>下载</p></blockquote> <p><img src="/v-blog/img/middle-ware/fastdfs/1526205705687.png" alt="1526205705687"></p> <ol><li>Client通过Tracker server查找要下载文件所在的的Storage server。</li> <li>Tracker server向Client返回包含指定文件的某个Storage server的IP地址和端口号。</li> <li>Client直接通过Tracker server返回的IP地址和端口与其中一台Storage server建立连接并指定要下载文件。</li> <li>下载文件成功。</li></ol> <h2 id="_4-安装和使用"><a href="#_4-安装和使用" class="header-anchor">#</a> 4.安装和使用</h2> <h3 id="_4-1-准备资源"><a href="#_4-1-准备资源" class="header-anchor">#</a> 4.1 准备资源</h3> <h4 id="_4-1-1-准备安装资源"><a href="#_4-1-1-准备安装资源" class="header-anchor">#</a> 4.1.1 准备安装资源</h4> <p>准备如下资源：https://github.com/happyfish100 并上传到linux下的<code>/home/svm/fastdfs</code>目录</p> <div class="language- extra-class"><pre class="language-text"><code>FastDFS_v5.08.tar.gz
+fastdfs-nginx-module_v1.16.tar.gz
+libfastcommon-master.zip
+libevent-2.0.22-stable.tar.gz
+</code></pre></div><h4 id="_4-1-2-ubuntu-安装"><a href="#_4-1-2-ubuntu-安装" class="header-anchor">#</a> 4.1.2 Ubuntu 安装</h4> <p>本文以Ubuntu 18.04 64位操作系统为例进行安装</p> <ul><li>第一步：安装Git
+fastdfs依赖libfastcommon，需要从github上clone到本地编译安装。因此首先需要安装git。</li></ul> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">apt-get</span> <span class="token function">install</span> <span class="token function">git</span>
+</code></pre></div><ul><li>第二步：克隆libfastcommon库</li></ul> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">git</span> clone https://github.com/happyfish100/libfastcommon.git
+</code></pre></div><ul><li>第三步：安装libfastcommon依赖  进入libfastcommon目录，依次执行脚本：</li></ul> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment"># 安装 make</span>
+<span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> <span class="token function">make</span>
+<span class="token comment"># 编译</span>
+./make.sh
+<span class="token comment"># 安装</span>
+./make.sh <span class="token function">install</span>
+</code></pre></div><ul><li>第四步：设置环境变量和软链接
+在32位ubuntu中，libfastcommon会安装在/usr/lib 中，64位系统则安装在 /usr/lib64 中</li></ul> <p>依次执行以下命令：（根据自己的操作系统选择路径）</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment"># 在etc的profile中配置环境变量、 我是64位系统，所以为lib64</span>
+<span class="token builtin class-name">export</span> <span class="token assign-left variable">LD_LIBRARY_PATH</span><span class="token operator">=</span>/usr/lib64/
+<span class="token comment"># 软链接（这里也有lib64）</span>
+<span class="token function">ln</span> -s /usr/lib64/libfastcommon.so /usr/local/lib/libfastcommon.so
+</code></pre></div><ul><li>第五步：下载、解压并安装FastDFS
+FastDFS的Github下载地址为：https://github.com/happyfish100/fastdfs/releases</li></ul> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment"># 在需要安装目录下执行：</span>
+<span class="token function">wget</span> https://github.com/happyfish100/fastdfs/archive/V6.04.tar.gz
+<span class="token comment"># 解压</span>
+<span class="token function">tar</span> xzf V6.04.tar.gz
+<span class="token comment"># 进入解压目录 编译</span>
+./make.sh
+<span class="token comment"># 安装</span>
+./make.sh <span class="token function">install</span>
+</code></pre></div><ul><li>第六步 安装Nignx模块：详见4.4</li></ul> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">git</span> clone https://github.com/happyfish100/fastdfs-nginx-module.git
+</code></pre></div><h3 id="_4-2-安装依赖"><a href="#_4-2-安装依赖" class="header-anchor">#</a> 4.2 安装依赖</h3> <p>FastDFS运行需要一些依赖，在课前资料提供的虚拟中已经安装好了这些依赖，如果大家想要从头学习，可以按下面方式安装：</p> <h4 id="_4-2-1-安装gcc依赖"><a href="#_4-2-1-安装gcc依赖" class="header-anchor">#</a> 4.2.1 安装GCC依赖</h4> <p>GCC用来对C语言代码进行编译运行，使用yum命令安装：</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">sudo</span> yum -y <span class="token function">install</span> gcc
+</code></pre></div><h4 id="_4-2-2-安装unzip工具"><a href="#_4-2-2-安装unzip工具" class="header-anchor">#</a> 4.2.2 安装unzip工具</h4> <p>unzip工具可以帮我们对压缩包进行解压</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">sudo</span> yum <span class="token function">install</span> -y <span class="token function">unzip</span> <span class="token function">zip</span>
+</code></pre></div><h4 id="_4-2-3-安装libevent"><a href="#_4-2-3-安装libevent" class="header-anchor">#</a> 4.2.3 安装libevent</h4> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">sudo</span> yum -y <span class="token function">install</span> libevent
+</code></pre></div><h4 id="_4-2-4-安装nginx所需依赖"><a href="#_4-2-4-安装nginx所需依赖" class="header-anchor">#</a> 4.2.4 安装Nginx所需依赖</h4> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">sudo</span> yum -y <span class="token function">install</span> pcre pcre-devel zlib zlib-devel openssl openssl-devel
+</code></pre></div><h4 id="_4-2-5-安装libfastcommon-master"><a href="#_4-2-5-安装libfastcommon-master" class="header-anchor">#</a> 4.2.5 安装libfastcommon-master</h4> <p>这个没有yum包，只能通过编译安装：</p> <ul><li><p>解压刚刚上传的<code>libfastcommon-master.zip</code></p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">tar</span> -xvf libfastcommon-master.zip
+</code></pre></div></li> <li><p>进入解压完成的目录：</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token builtin class-name">cd</span> libfastcommon-master
+</code></pre></div></li> <li><p>编译并且安装：</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">sudo</span> ./make.sh 
+<span class="token function">sudo</span> ./makesh <span class="token function">install</span>
+</code></pre></div></li></ul> <p>到这里为止，所有依赖都已经安装完毕，接下来我们安装FastDFS：</p> <h3 id="_4-3-安装fastdfs"><a href="#_4-3-安装fastdfs" class="header-anchor">#</a> 4.3 安装FastDFS</h3> <h4 id="_4-3-1-编译安装"><a href="#_4-3-1-编译安装" class="header-anchor">#</a> 4.3.1 编译安装</h4> <p>这里我们也采用编译安装，步骤与刚才的编译安装方式一样：</p> <ul><li><p>解压</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">tar</span> -xvf V6.04.tar.gz
+</code></pre></div></li> <li><p>进入目录</p> <div class="language-he extra-class"><pre class="language-text"><code>cd  fastdfs-6.04
+</code></pre></div></li> <li><p>编译并安装</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">sudo</span> ./make.sh 
+<span class="token function">sudo</span> ./make.sh <span class="token function">install</span>
+</code></pre></div></li> <li><p>校验安装结果</p></li></ul> <p>1）安装完成，我们应该能在<code>/etc/init.d/</code>目录，通过命令<code>ll /etc/init.d/ | grep fdfs</code>看到FastDFS提供的启动脚本：</p> <p><img src="/v-blog/img/middle-ware/fastdfs/image-20200421171410168.png" alt="image-20200421171410168"></p> <p>其中：</p> <ul><li><code>fdfs_trackerd</code> 是tracker启动脚本</li> <li><code>fdfs_storaged</code> 是storage启动脚本</li></ul> <p>2）我们可以在 <code>/etc/fdfs</code>目录，通过命令查看到以下配置文件模板：</p> <p><img src="/v-blog/img/middle-ware/fastdfs/image-20200421171602462.png" alt="image-20200421171410172"></p> <p>其中：</p> <ul><li><code>tarcker.conf.sample</code> 是tracker的配置文件模板</li> <li><code>storage.conf.sample</code> 是storage的配置文件模板</li> <li><code>client.conf.sample</code> 是客户端的配置文件模板</li></ul> <h4 id="_4-3-2-启动tracker"><a href="#_4-3-2-启动tracker" class="header-anchor">#</a> 4.3.2 启动tracker</h4> <p>FastDFS的tracker和storage在刚刚的安装过程中，都已经被安装了，因此我们安装这两种角色的方式是一样的。不同的是，两种需要不同的配置文件。</p> <p>我们要启动tracker，就修改刚刚看到的<code>tarcker.conf</code>，并且启动<code>fdfs_trackerd</code>脚本即可。</p> <ul><li>编辑tracker配置</li></ul> <p>首先我们将模板文件进行赋值和重命名：</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">sudo</span> <span class="token function">cp</span> tracker.conf.sample tracker.conf
+<span class="token function">sudo</span> <span class="token function">vim</span> tracker.conf
+</code></pre></div><p>打开<code>tracker.conf</code>，修改<code>base_path</code>配置：</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token assign-left variable">base_path</span><span class="token operator">=</span>/svm/fdfs/tracker <span class="token comment"># tracker的数据和日志存放目录</span>
+</code></pre></div><ul><li>创建目录</li></ul> <p>刚刚配置的目录可能不存在，我们创建出来</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">sudo</span> <span class="token function">mkdir</span> -p /svm/fdfs/tracker
+</code></pre></div><ul><li><p>启动tracker</p> <p>我们可以使用 <code>sh /etc/init.d/fdfs_trackerd</code> 启动，不过安装过程中，fdfs已经被设置为系统服务，我们可以采用熟悉的服务启动方式：</p></li></ul> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">sudo</span> <span class="token function">service</span> fdfs_trackerd start <span class="token comment"># 启动fdfs_trackerd服务，停止用stop</span>
+<span class="token comment"># 或者</span>
+<span class="token function">sh</span> /etc/init.d/fdfs_trackerd start <span class="token operator">|</span> stop <span class="token operator">|</span> restart 
+</code></pre></div><p>另外，我们可以通过以下命令，设置tracker开机启动：</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">sudo</span> <span class="token function">chkconfig</span> fdfs_trackerd on
+
+<span class="token comment"># 如果是ubuntu</span>
+<span class="token function">sudo</span> <span class="token function">apt-get</span> update
+<span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> sysv-rc-conf
+<span class="token function">sudo</span> sysv-rc-conf fdfs_trackerd on
+</code></pre></div><h4 id="_1-3-3-启动storage"><a href="#_1-3-3-启动storage" class="header-anchor">#</a> 1.3.3 启动storage</h4> <p>我们要启动tracker，就修改刚刚看到的<code>tarcker.conf</code>，并且启动<code>fdfs_trackerd</code>脚本即可。</p> <ul><li>编辑storage配置</li></ul> <p>首先我们将模板文件进行赋值和重命名：</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">sudo</span> <span class="token function">cp</span> storage.conf.sample storage.conf
+<span class="token function">sudo</span> <span class="token function">vim</span> storage.conf
+</code></pre></div><p>打开<code>storage.conf</code>，修改<code>base_path</code>配置：</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token assign-left variable">base_path</span><span class="token operator">=</span>/svm/fdfs/storage <span class="token comment"># storage的数据和日志存放目录</span>
+<span class="token assign-left variable">store_path0</span><span class="token operator">=</span>/svm/fdfs/storage <span class="token comment"># storage的上传文件存放路径</span>
+<span class="token assign-left variable">tracker_server</span><span class="token operator">=</span><span class="token number">10.211</span>.55.6:22122 <span class="token comment"># tracker的地址</span>
+</code></pre></div><ul><li>创建目录</li></ul> <p>刚刚配置的目录可能不存在，我们创建出来</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">sudo</span> <span class="token function">mkdir</span> -p /svm/fdfs/storage
+</code></pre></div><ul><li><p>启动storage</p> <p>我们可以使用 <code>sh /etc/init.d/fdfs_storaged</code> 启动，同样我们可以用服务启动方式：</p></li></ul> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">sudo</span> <span class="token function">service</span> fdfs_storaged start  <span class="token comment"># 启动fdfs_storaged服务，停止用stop</span>
+<span class="token comment"># 启动</span>
+<span class="token function">sh</span> /etc/init.d/fdfs_storaged start <span class="token operator">|</span> stop <span class="token operator">|</span> restart
+</code></pre></div><p>另外，我们可以通过以下命令，设置tracker开机启动：</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">sudo</span> <span class="token function">chkconfig</span> fdfs_storaged on
+
+<span class="token comment"># 如果是ubuntu</span>
+<span class="token function">sudo</span> <span class="token function">apt-get</span> update
+<span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> sysv-rc-conf
+<span class="token function">sudo</span> sysv-rc-conf fdfs_storaged on
+</code></pre></div><p>最后，通过<code>ps -ef | grep fdfs</code> 查看进程：</p> <p><img src="/v-blog/img/middle-ware/fastdfs/image-20200421175630416.png" alt="image-20200421175630416"></p> <h3 id="_4-4-安装nginx及fastdfs模块"><a href="#_4-4-安装nginx及fastdfs模块" class="header-anchor">#</a> 4.4 安装Nginx及FastDFS模块</h3> <h4 id="_4-4-1-fastdfs的nginx模块"><a href="#_4-4-1-fastdfs的nginx模块" class="header-anchor">#</a> 4.4.1 FastDFS的Nginx模块</h4> <ul><li><p>下载</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">git</span> clone https://github.com/happyfish100/fastdfs-nginx-module.git
+</code></pre></div></li> <li><p>配置config文件</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment"># 进入配置目录</span>
+<span class="token builtin class-name">cd</span> /home/svm/fastdfs/fastdfs-nginx-module/src/
+<span class="token comment"># 修改配置</span>
+<span class="token function">vim</span> config
+<span class="token comment"># 执行下面命令（将配置中的/usr/local改为/usr）：</span>
+:%s+/usr/local/+/usr/+g
+</code></pre></div></li> <li><p>配置mod_fastdfs.conf</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment"># 将src目录下的mod_fastdfs.conf复制到 /etc/fdfs目录：</span>
+<span class="token function">sudo</span> <span class="token function">cp</span> mod_fastdfs.conf /etc/fdfs/
+<span class="token comment"># 编辑该文件</span>
+<span class="token function">sudo</span> <span class="token function">vim</span> /etc/fdfs/mod_fastdfs.conf
+</code></pre></div></li> <li><p>修改一下配置：</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token assign-left variable">connect_timeout</span><span class="token operator">=</span><span class="token number">10</span>                  		<span class="token comment"># 客户端访问文件连接超时时长（单位：秒）</span>
+<span class="token assign-left variable">tracker_server</span><span class="token operator">=</span><span class="token number">10.211</span>.55.6:22122  			<span class="token comment"># tracker服务IP和端口</span>
+<span class="token assign-left variable">url_have_group_name</span><span class="token operator">=</span>true            		<span class="token comment"># 访问链接前缀加上组名</span>
+<span class="token assign-left variable">store_path0</span><span class="token operator">=</span>/svm/fdfs/storage        		<span class="token comment"># 文件存储路径</span>
+</code></pre></div></li> <li><p>复制 FastDFS的安装目录中的部分配置文件到/etc/fdfs目录</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token builtin class-name">cd</span> /home/svm/fastdfs/fastdfs-6.04/conf/
+<span class="token function">cp</span> http.conf mime.types /etc/fdfs/
+</code></pre></div></li></ul> <h4 id="_4-4-2-安装nginx"><a href="#_4-4-2-安装nginx" class="header-anchor">#</a> 4.4.2 安装Nginx</h4> <ul><li><p>下载</p> <p>官网地址: <code>http://nginx.org/en/download.html</code>  下载稳定版</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment"># 或者直接下载</span>
+<span class="token function">wget</span> http://nginx.org/download/nginx-1.18.0.tar.gz
+</code></pre></div></li> <li><p>解压</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">tar</span> -xvf nginx-1.18.0.tar.gz
+</code></pre></div></li> <li><p>配置</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment"># 进入安装目录并执行以下指令</span>
+<span class="token function">sudo</span> ./configure --prefix<span class="token operator">=</span>/opt/nginx --sbin-path<span class="token operator">=</span>/usr/bin/nginx --add-module<span class="token operator">=</span>/home/svm/fastdfs/fastdfs-nginx-module/src
+</code></pre></div></li> <li><p>编译安装</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment"># 安装环境GCC / PCRE / zlib</span>
+<span class="token function">sudo</span> yum -y <span class="token function">install</span> pcre pcre-devel zlib zlib-devel openssl openssl-devel
+
+<span class="token comment"># 编译安装</span>
+<span class="token function">sudo</span> <span class="token function">make</span> <span class="token operator">&amp;&amp;</span> <span class="token function">sudo</span> <span class="token function">make</span> <span class="token function">install</span>
+</code></pre></div></li> <li><p>可能会出现的异常：</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment"># 可能的报错：</span>
+/usr/include/fastdfs/fdfs_define.h:15:27: fatal error: common_define.h: No such <span class="token function">file</span> or directory
+
+<span class="token comment"># 解决方案：修改fastdfs-nginx-module/src/config文件，然后重新回到配置阶段</span>
+<span class="token assign-left variable">ngx_module_incs</span><span class="token operator">=</span><span class="token string">&quot;/usr/include/fastdfs /usr/include/fastcommon/&quot;</span>
+<span class="token assign-left variable">CORE_INCS</span><span class="token operator">=</span><span class="token string">&quot;<span class="token variable">$CORE_INCS</span> /usr/include/fastdfs /usr/include/fastcommon/&quot;</span>
+<span class="token comment"># 配置</span>
+<span class="token function">sudo</span> ./configure --prefix<span class="token operator">=</span>/opt/nginx --sbin-path<span class="token operator">=</span>/usr/bin/nginx --add-module<span class="token operator">=</span>/home/svm/fastdfs/fastdfs-nginx-module/src
+<span class="token comment"># ln -s /usr/include/fast* /usr/local/include/</span>
+<span class="token comment"># 编译安装</span>
+<span class="token function">sudo</span> <span class="token function">make</span> <span class="token operator">&amp;&amp;</span> <span class="token function">sudo</span> <span class="token function">make</span> <span class="token function">install</span>
+</code></pre></div></li> <li><p>配置nginx整合fastdfs-module模块</p> <p>我们需要修改nginx配置文件，在/opt/nginx/config/nginx.conf文件中：</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">sudo</span> <span class="token function">vim</span>  /opt/nginx/conf/nginx.conf
+</code></pre></div><p>将文件中，原来的<code>server 80{ ...}</code> 部分代码替换为如下代码：</p> <div class="language-nginx extra-class"><pre class="language-nginx"><code>    <span class="token directive"><span class="token keyword">server</span></span> <span class="token punctuation">{</span>
+        <span class="token directive"><span class="token keyword">listen</span>       <span class="token number">80</span></span><span class="token punctuation">;</span>
+        <span class="token directive"><span class="token keyword">server_name</span>  xyz.image.com</span><span class="token punctuation">;</span>
+
+    	<span class="token comment"># 监听域名中带有group的，交给FastDFS模块处理</span>
+        <span class="token directive"><span class="token keyword">location</span> ~/group([0-9])/</span> <span class="token punctuation">{</span>
+            <span class="token directive"><span class="token keyword">ngx_fastdfs_module</span></span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token directive"><span class="token keyword">location</span> /</span> <span class="token punctuation">{</span>
+            <span class="token directive"><span class="token keyword">root</span>   html</span><span class="token punctuation">;</span>
+            <span class="token directive"><span class="token keyword">index</span>  index.html index.htm</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token directive"><span class="token keyword">error_page</span>   <span class="token number">500</span> <span class="token number">502</span> <span class="token number">503</span> <span class="token number">504</span>  /50x.html</span><span class="token punctuation">;</span>
+        <span class="token directive"><span class="token keyword">location</span> = /50x.html</span> <span class="token punctuation">{</span>
+            <span class="token directive"><span class="token keyword">root</span>   html</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        
+    <span class="token punctuation">}</span>
+</code></pre></div></li> <li><p>启动</p> <div class="language-shell extra-class"><pre class="language-shell"><code>nginx <span class="token comment"># 启动</span>
+nginx -s stop <span class="token comment"># 停止</span>
+nginx -s reload <span class="token comment"># 重新加载配置</span>
+</code></pre></div></li> <li><p>设置nginx开机启动</p> <p>创建一个开机启动的脚本：</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">vim</span> /etc/init.d/nginx
+</code></pre></div><p>添加以下内容：</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token shebang important">#!/bin/sh</span>
+<span class="token comment">#</span>
+<span class="token comment"># nginx - this script starts and stops the nginx daemon</span>
+<span class="token comment">#</span>
+<span class="token comment"># chkconfig:   - 85 15</span>
+<span class="token comment"># description:  NGINX is an HTTP(S) server, HTTP(S) reverse \</span>
+<span class="token comment">#               proxy and IMAP/POP3 proxy server</span>
+<span class="token comment"># processname: nginx</span>
+<span class="token comment"># config:      /etc/nginx/nginx.conf</span>
+<span class="token comment"># config:      /etc/sysconfig/nginx</span>
+<span class="token comment"># pidfile:     /var/run/nginx.pid</span>
+
+<span class="token comment"># Source function library.</span>
+<span class="token builtin class-name">.</span> /etc/rc.d/init.d/functions
+
+<span class="token comment"># Source networking configuration.</span>
+<span class="token builtin class-name">.</span> /etc/sysconfig/network
+
+<span class="token comment"># Check that networking is up.</span>
+<span class="token punctuation">[</span> <span class="token string">&quot;<span class="token variable">$NETWORKING</span>&quot;</span> <span class="token operator">=</span> <span class="token string">&quot;no&quot;</span> <span class="token punctuation">]</span> <span class="token operator">&amp;&amp;</span> <span class="token builtin class-name">exit</span> <span class="token number">0</span>
+
+<span class="token assign-left variable">nginx</span><span class="token operator">=</span><span class="token string">&quot;/usr/bin/nginx&quot;</span>
+<span class="token assign-left variable">prog</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">basename</span> $nginx<span class="token variable">)</span></span>
+
+<span class="token assign-left variable">NGINX_CONF_FILE</span><span class="token operator">=</span><span class="token string">&quot;/opt/nginx/conf/nginx.conf&quot;</span>
+
+<span class="token punctuation">[</span> -f /etc/sysconfig/nginx <span class="token punctuation">]</span> <span class="token operator">&amp;&amp;</span> <span class="token builtin class-name">.</span> /etc/sysconfig/nginx
+
+<span class="token assign-left variable">lockfile</span><span class="token operator">=</span>/var/lock/subsys/nginx
+
+<span class="token function-name function">make_dirs</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token comment"># make required directories</span>
+   <span class="token assign-left variable">user</span><span class="token operator">=</span><span class="token variable"><span class="token variable">`</span>$nginx -V <span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span><span class="token file-descriptor important">&amp;1</span> <span class="token operator">|</span> <span class="token function">grep</span> <span class="token string">&quot;configure arguments:.*--user=&quot;</span> <span class="token operator">|</span> <span class="token function">sed</span> <span class="token string">'s/[^*]*--user=\([^ ]*\).*/\1/g'</span> -<span class="token variable">`</span></span>
+   <span class="token keyword">if</span> <span class="token punctuation">[</span> -n <span class="token string">&quot;<span class="token variable">$user</span>&quot;</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+      <span class="token keyword">if</span> <span class="token punctuation">[</span> -z <span class="token string">&quot;<span class="token variable"><span class="token variable">`</span><span class="token function">grep</span> $user /etc/passwd<span class="token variable">`</span></span>&quot;</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+         <span class="token function">useradd</span> -M -s /bin/nologin <span class="token variable">$user</span>
+      <span class="token keyword">fi</span>
+      <span class="token assign-left variable">options</span><span class="token operator">=</span><span class="token variable"><span class="token variable">`</span>$nginx -V <span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span><span class="token file-descriptor important">&amp;1</span> <span class="token operator">|</span> <span class="token function">grep</span> <span class="token string">'configure arguments:'</span><span class="token variable">`</span></span>
+      <span class="token keyword">for</span> <span class="token for-or-select variable">opt</span> <span class="token keyword">in</span> <span class="token variable">$options</span><span class="token punctuation">;</span> <span class="token keyword">do</span>
+          <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token variable"><span class="token variable">`</span><span class="token builtin class-name">echo</span> $opt <span class="token operator">|</span> <span class="token function">grep</span> <span class="token string">'.*-temp-path'</span><span class="token variable">`</span></span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+              <span class="token assign-left variable">value</span><span class="token operator">=</span><span class="token variable"><span class="token variable">`</span><span class="token builtin class-name">echo</span> $opt <span class="token operator">|</span> <span class="token function">cut</span> -d <span class="token string">&quot;=&quot;</span> -f <span class="token number">2</span><span class="token variable">`</span></span>
+              <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token operator">!</span> -d <span class="token string">&quot;<span class="token variable">$value</span>&quot;</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+                  <span class="token comment"># echo &quot;creating&quot; $value</span>
+                  <span class="token function">mkdir</span> -p <span class="token variable">$value</span> <span class="token operator">&amp;&amp;</span> <span class="token function">chown</span> -R <span class="token variable">$user</span> <span class="token variable">$value</span>
+              <span class="token keyword">fi</span>
+          <span class="token keyword">fi</span>
+       <span class="token keyword">done</span>
+    <span class="token keyword">fi</span>
+<span class="token punctuation">}</span>
+
+<span class="token function-name function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token punctuation">[</span> -x <span class="token variable">$nginx</span> <span class="token punctuation">]</span> <span class="token operator">||</span> <span class="token builtin class-name">exit</span> <span class="token number">5</span>
+    <span class="token punctuation">[</span> -f <span class="token variable">$NGINX_CONF_FILE</span> <span class="token punctuation">]</span> <span class="token operator">||</span> <span class="token builtin class-name">exit</span> <span class="token number">6</span>
+    make_dirs
+    <span class="token builtin class-name">echo</span> -n $<span class="token string">&quot;Starting <span class="token variable">$prog</span>: &quot;</span>
+    daemon <span class="token variable">$nginx</span> -c <span class="token variable">$NGINX_CONF_FILE</span>
+    <span class="token assign-left variable">retval</span><span class="token operator">=</span><span class="token variable">$?</span>
+    <span class="token builtin class-name">echo</span>
+    <span class="token punctuation">[</span> <span class="token variable">$retval</span> -eq <span class="token number">0</span> <span class="token punctuation">]</span> <span class="token operator">&amp;&amp;</span> <span class="token function">touch</span> <span class="token variable">$lockfile</span>
+    <span class="token builtin class-name">return</span> <span class="token variable">$retval</span>
+<span class="token punctuation">}</span>
+
+<span class="token function-name function">stop</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token builtin class-name">echo</span> -n $<span class="token string">&quot;Stopping <span class="token variable">$prog</span>: &quot;</span>
+    killproc <span class="token variable">$prog</span> -QUIT
+    <span class="token assign-left variable">retval</span><span class="token operator">=</span><span class="token variable">$?</span>
+    <span class="token builtin class-name">echo</span>
+    <span class="token punctuation">[</span> <span class="token variable">$retval</span> -eq <span class="token number">0</span> <span class="token punctuation">]</span> <span class="token operator">&amp;&amp;</span> <span class="token function">rm</span> -f <span class="token variable">$lockfile</span>
+    <span class="token builtin class-name">return</span> <span class="token variable">$retval</span>
+<span class="token punctuation">}</span>
+
+<span class="token function-name function">restart</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    configtest <span class="token operator">||</span> <span class="token builtin class-name">return</span> <span class="token variable">$?</span>
+    stop
+    <span class="token function">sleep</span> <span class="token number">1</span>
+    start
+<span class="token punctuation">}</span>
+
+<span class="token function-name function">reload</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    configtest <span class="token operator">||</span> <span class="token builtin class-name">return</span> <span class="token variable">$?</span>
+    <span class="token builtin class-name">echo</span> -n $<span class="token string">&quot;Reloading <span class="token variable">$prog</span>: &quot;</span>
+    killproc <span class="token variable">$nginx</span> -HUP
+    <span class="token assign-left variable">RETVAL</span><span class="token operator">=</span><span class="token variable">$?</span>
+    <span class="token builtin class-name">echo</span>
+<span class="token punctuation">}</span>
+
+<span class="token function-name function">force_reload</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    restart
+<span class="token punctuation">}</span>
+
+<span class="token function-name function">configtest</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token variable">$nginx</span> -t -c <span class="token variable">$NGINX_CONF_FILE</span>
+<span class="token punctuation">}</span>
+
+<span class="token function-name function">rh_status</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    status <span class="token variable">$prog</span>
+<span class="token punctuation">}</span>
+
+<span class="token function-name function">rh_status_q</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    rh_status <span class="token operator">&gt;</span>/dev/null <span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span><span class="token file-descriptor important">&amp;1</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">case</span> <span class="token string">&quot;<span class="token variable">$1</span>&quot;</span> <span class="token keyword">in</span>
+    start<span class="token punctuation">)</span>
+        rh_status_q <span class="token operator">&amp;&amp;</span> <span class="token builtin class-name">exit</span> <span class="token number">0</span>
+        <span class="token variable">$1</span>
+        <span class="token punctuation">;</span><span class="token punctuation">;</span>
+    stop<span class="token punctuation">)</span>
+        rh_status_q <span class="token operator">||</span> <span class="token builtin class-name">exit</span> <span class="token number">0</span>
+        <span class="token variable">$1</span>
+        <span class="token punctuation">;</span><span class="token punctuation">;</span>
+    restart<span class="token operator">|</span>configtest<span class="token punctuation">)</span>
+        <span class="token variable">$1</span>
+        <span class="token punctuation">;</span><span class="token punctuation">;</span>
+    reload<span class="token punctuation">)</span>
+        rh_status_q <span class="token operator">||</span> <span class="token builtin class-name">exit</span> <span class="token number">7</span>
+        <span class="token variable">$1</span>
+        <span class="token punctuation">;</span><span class="token punctuation">;</span>
+    force-reload<span class="token punctuation">)</span>
+        force_reload
+        <span class="token punctuation">;</span><span class="token punctuation">;</span>
+    status<span class="token punctuation">)</span>
+        rh_status
+        <span class="token punctuation">;</span><span class="token punctuation">;</span>
+    condrestart<span class="token operator">|</span>try-restart<span class="token punctuation">)</span>
+        rh_status_q <span class="token operator">||</span> <span class="token builtin class-name">exit</span> <span class="token number">0</span>
+            <span class="token punctuation">;</span><span class="token punctuation">;</span>
+    *<span class="token punctuation">)</span>
+        <span class="token builtin class-name">echo</span> $<span class="token string">&quot;Usage: <span class="token variable">$0</span> {start|stop|status|restart|condrestart|try-restart|reload|force-reload|configtest}&quot;</span>
+        <span class="token builtin class-name">exit</span> <span class="token number">2</span>
+<span class="token keyword">esac</span>
+
+</code></pre></div></li> <li><p>修改文件权限，并加入服务列表</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment"># 修改权限</span>
+<span class="token function">chmod</span> <span class="token number">777</span> /etc/init.d/nginx 
+<span class="token comment"># 添加到服务列表</span>
+<span class="token function">chkconfig</span> --add /etc/init.d/nginx
+</code></pre></div></li> <li><p>设置开机启动</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">chkconfig</span> nginx on
+sysv-rc-conf nginx on <span class="token comment"># Ubuntu</span>
+</code></pre></div></li></ul> <h2 id="_5-java客户端"><a href="#_5-java客户端" class="header-anchor">#</a> 5.java客户端</h2> <p>余庆先生提供了一个Java客户端，但是作为一个C程序员，写的java代码可想而知。</p> <p>这里推荐一个开源的FastDFS客户端，支持SpringBoot2.0。</p> <p>配置使用极为简单，支持连接池，支持自动生成缩略图，狂拽酷炫吊炸天啊，有木有。</p> <p>地址：<a href="https://github.com/tobato/FastDFS_Client" target="_blank" rel="noopener noreferrer">tobato/FastDFS_client<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><img src="/v-blog/img/middle-ware/fastdfs/image-20200422145431789.png" alt="image-20200422145431789"></p> <h3 id="_5-1-引入依赖"><a href="#_5-1-引入依赖" class="header-anchor">#</a> 5.1.引入依赖</h3> <div class="language-xml extra-class"><pre class="language-xml"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">&gt;</span></span>com.github.tobato<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">&gt;</span></span>fastdfs-client<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>version</span><span class="token punctuation">&gt;</span></span>1.27.2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>version</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependency</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h3 id="_5-2-引入配置类"><a href="#_5-2-引入配置类" class="header-anchor">#</a> 5.2.引入配置类</h3> <p>纯java配置：</p> <div class="language-java extra-class"><pre class="language-java"><code><span class="token annotation punctuation">@Configuration</span>
+<span class="token annotation punctuation">@Import</span><span class="token punctuation">(</span><span class="token class-name">FdfsClientConfig</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span>
+<span class="token comment">// 解决jmx重复注册bean的问题</span>
+<span class="token annotation punctuation">@EnableMBeanExport</span><span class="token punctuation">(</span>registration <span class="token operator">=</span> <span class="token class-name">RegistrationPolicy</span><span class="token punctuation">.</span>IGNORE_EXISTING<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">FastClientImporter</span> <span class="token punctuation">{</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_5-3-编写fastdfs属性"><a href="#_5-3-编写fastdfs属性" class="header-anchor">#</a> 5.3.编写FastDFS属性</h3> <div class="language-yaml extra-class"><pre class="language-yaml"><code><span class="token key atrule">fdfs</span><span class="token punctuation">:</span>
+  <span class="token key atrule">so-timeout</span><span class="token punctuation">:</span> <span class="token number">1501</span>
+  <span class="token key atrule">connect-timeout</span><span class="token punctuation">:</span> <span class="token number">601</span>
+  <span class="token key atrule">thumb-image</span><span class="token punctuation">:</span> <span class="token comment"># 缩略图</span>
+    <span class="token key atrule">width</span><span class="token punctuation">:</span> <span class="token number">60</span>
+    <span class="token key atrule">height</span><span class="token punctuation">:</span> <span class="token number">60</span>
+  <span class="token key atrule">tracker-list</span><span class="token punctuation">:</span> <span class="token comment"># tracker地址 可以有多个(集群)</span>
+    <span class="token punctuation">-</span> 10.211.55.6<span class="token punctuation">:</span><span class="token number">22122</span>
+</code></pre></div><h3 id="_5-4-测试"><a href="#_5-4-测试" class="header-anchor">#</a> 5.4.测试</h3> <div class="language-java extra-class"><pre class="language-java"><code><span class="token keyword">package</span> <span class="token namespace">xyz<span class="token punctuation">.</span>huwenfeng<span class="token punctuation">.</span>fdfs</span><span class="token punctuation">;</span>
+
+<span class="token annotation punctuation">@SpringBootTest</span>
+<span class="token keyword">class</span> <span class="token class-name">FdfsApplicationTests</span> <span class="token punctuation">{</span>
+
+    <span class="token annotation punctuation">@Test</span>
+    <span class="token keyword">void</span> <span class="token function">contextLoads</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Autowired</span>
+    <span class="token keyword">private</span> <span class="token class-name">FastFileStorageClient</span> storageClient<span class="token punctuation">;</span>
+
+    <span class="token annotation punctuation">@Autowired</span>
+    <span class="token keyword">private</span> <span class="token class-name">ThumbImageConfig</span> thumbImageConfig<span class="token punctuation">;</span>
+
+    <span class="token annotation punctuation">@Test</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">testUpload</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">FileNotFoundException</span> <span class="token punctuation">{</span>
+        <span class="token class-name">File</span> file <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">File</span><span class="token punctuation">(</span><span class="token string">&quot;/v-blog/img/middle-ware/fastdfs/ps.jpg&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// 上传并且生成缩略图</span>
+        <span class="token class-name">StorePath</span> storePath <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>storageClient<span class="token punctuation">.</span><span class="token function">uploadFile</span><span class="token punctuation">(</span>
+                <span class="token keyword">new</span> <span class="token class-name">FileInputStream</span><span class="token punctuation">(</span>file<span class="token punctuation">)</span><span class="token punctuation">,</span> file<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">&quot;jpg&quot;</span><span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// 带分组的路径</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>storePath<span class="token punctuation">.</span><span class="token function">getFullPath</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// 不带分组的路径</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>storePath<span class="token punctuation">.</span><span class="token function">getPath</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Test</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">testUploadAndCreateThumb</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">FileNotFoundException</span> <span class="token punctuation">{</span>
+        <span class="token class-name">File</span> file <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">File</span><span class="token punctuation">(</span><span class="token string">&quot;/v-blog/img/middle-ware/fastdfs/ps.jpg&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// 上传并且生成缩略图</span>
+        <span class="token class-name">StorePath</span> storePath <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>storageClient<span class="token punctuation">.</span><span class="token function">uploadImageAndCrtThumbImage</span><span class="token punctuation">(</span>
+                <span class="token keyword">new</span> <span class="token class-name">FileInputStream</span><span class="token punctuation">(</span>file<span class="token punctuation">)</span><span class="token punctuation">,</span> file<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">&quot;jpg&quot;</span><span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// 带分组的路径</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>storePath<span class="token punctuation">.</span><span class="token function">getFullPath</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// 不带分组的路径</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>storePath<span class="token punctuation">.</span><span class="token function">getPath</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// 获取缩略图路径</span>
+        <span class="token class-name">String</span> path <span class="token operator">=</span> thumbImageConfig<span class="token punctuation">.</span><span class="token function">getThumbImagePath</span><span class="token punctuation">(</span>storePath<span class="token punctuation">.</span><span class="token function">getPath</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>path<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+</code></pre></div><p>结果：</p> <div class="language- extra-class"><pre class="language-text"><code>run testUpload();
+group1/M00/00/00/CtM3Bl6fzfmAeqYXAGAtzfWv0Og796.jpg
+M00/00/00/CtM3Bl6fzfmAeqYXAGAtzfWv0Og796.jpg
+
+run testUploadAndCreateThumb();
+group1/M00/00/00/CtM3Bl6fzmaAKJGxAGAtzfWv0Og860.jpg
+M00/00/00/CtM3Bl6fzmaAKJGxAGAtzfWv0Og860.jpg
+M00/00/00/CtM3Bl6fzmaAKJGxAGAtzfWv0Og860_60x60.jpg
+</code></pre></div><p>内容地址：</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment"># 我的host里面添加了 10.211.55.6   xyz.image.com  </span>
+<span class="token comment"># 10.211.55.6对应我fastdfs的服务器ip</span>
+http://xyz.image.com/group1/M00/00/00/CtM3Bl6fzmaAKJGxAGAtzfWv0Og860.jpg
+</code></pre></div><p><img src="/v-blog/img/middle-ware/fastdfs/image-20200422132036043.png" alt="image-20200422132036043"></p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.b9273b31.js" defer></script><script src="/blog/assets/js/2.a919457f.js" defer></script><script src="/blog/assets/js/127.6477f5d9.js" defer></script>
+  </body>
+</html>
