@@ -1,6 +1,6 @@
 <!-- Add banner here -->
 
-# Project Title 
+# HWF's Blog 
 
 <!-- Add buttons here -->
 
@@ -40,6 +40,7 @@ I use [**Shields IO**](https://shields.io/) for making badges. It is a simple an
 ![Tweet](https://img.shields.io/twitter/url?style=flat-square&logo=twitter&url=https%3A%2F%2Fnavendu.me%2Fnsfw-filter%2Findex.html): This is not essential but it is a cool way to let others know about your project! Clicking this button automatically opens twitter and writes a tweet about your project and link to it. All the user has to do is to click tweet. Isn't that neat? -->
 
 # Demo-Preview
+[See Demo](https://hm0223.github.io/blog/)
 
 <!-- Add a demo for your project -->
 
@@ -55,7 +56,7 @@ Here is a random GIF as a placeholder.
 
 Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README. -->
 
-- [Project Title](#project-title)
+- [HWF's Blog](#HWF's Blog)
 - [Demo-Preview](#demo-preview)
 - [Table of contents](#table-of-contents)
 - [Installation](#installation)
@@ -69,6 +70,60 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
 
 # Installation
 [(Back to top)](#table-of-contents)
+
+> see: https://vuepress.vuejs.org/zh/guide/getting-started.html
+
+1. 安装 并使用 vuepress
+
+```shell
+# 1. 创建工作目录
+mkdir blog && cd blog
+
+# 2. 用包管理器初始化项目
+npm init
+
+# 3. 安装 `VuePress` 依赖
+npm install -D vuepress
+
+# 4. 创建你的第一篇文档
+mkdir docs && echo '# Hello VuePress' > docs/README.md
+
+# 5. 启动
+npm run dev
+```
+
+2. 目录结构:
+```.
+├── docs
+│   ├── .vuepress (可选的)
+│   │   ├── components (可选的)
+│   │   ├── theme (可选的)
+│   │   │   └── Layout.vue
+│   │   ├── public
+│   │   ├── config.js 
+└── package.json
+```
+
+3. 安装主题
+> see: https://www.vuepress.cn/theme/blog-theme.html
+
+> see: https://vuepress-theme-blog.billyyyyy3320.com/
+
+
+```shell
+# 1. 安装主题
+npm install @vuepress/theme-blog -D
+```
+```js
+// 2. 使用主题
+// .vuepress/config.js
+module.exports = {
+  theme: '@vuepress/blog',
+  themeConfig: {
+    // 请参考文档来查看所有可用的选项。
+  }
+}
+```
 
 <!-- *You might have noticed the **Back to top** button(if not, please notice, it's right there!). This is a good idea because it makes your README **easy to navigate.*** 
 
@@ -90,6 +145,10 @@ To use this project, first clone the repo on your device using the command below
 
 # Usage
 [(Back to top)](#table-of-contents)
+
+> see: https://vuepress-theme-blog.billyyyyy3320.com/
+
+具体配置,详见：[config.js](./docs/.vuepress/config.js)
 
 <!-- This is optional and it is used to give the user info on how to use the project after installation. This could be added in the Installation section also. -->
 
@@ -149,8 +208,7 @@ I personally add the name of the license and provide a link to it like below. --
 
 Let's make it an image because by now you have realised that multimedia in images == cool(*please notice the subtle programming joke). -->
 
-Leave a star in GitHub, give a clap in Medium and share this guide if you found this helpful.
+Leave a star in  [Github](https://github.com/hm0223/blog) , give a clap in Medium and share this guide if you found this helpful.
 
 <!-- Add the footer here -->
-
 <!-- ![Footer](https://github.com/navendu-pottekkat/awesome-readme/blob/master/fooooooter.png) -->
