@@ -1,6 +1,6 @@
 <!-- Add banner here -->
 
-# HWF's Blog 
+# Blog 
 
 <!-- Add buttons here -->
 
@@ -56,7 +56,7 @@ Here is a random GIF as a placeholder.
 
 Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README. -->
 
-- [HWF's Blog](#HWF's Blog)
+- [Blog](#blog)
 - [Demo-Preview](#demo-preview)
 - [Table of contents](#table-of-contents)
 - [Installation](#installation)
