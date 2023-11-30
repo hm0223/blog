@@ -13,7 +13,17 @@
 // }
 
 // .vuepress/config.js
-module.exports = {
+module.exports = {plugins: {
+    '@vssue/vuepress-plugin-vssue': {
+      // set `platform` rather than `api`
+      platform: 'github',
+      // all other options of Vssue are allowed
+      owner: 'hm0223',
+      repo: 'blog',
+      clientId: 'YOUR_CLIENT_ID',
+      clientSecret: 'YOUR_CLIENT_SECRET',
+    },
+  },
   title: "hwf's blog", // Title for the site. This will be displayed in the navbar.
   head: [
     ['link', {rel: 'icon', href: '/img/icon.jpg'}],
@@ -23,7 +33,26 @@ module.exports = {
   base: '/blog/' ,
   themeConfig: {
     // Please keep looking down to see the available options.
-    // nav: require('./nav'),
+    nav: require('./nav-v2'),
     // sidebar: require('./sidebar')
+    footer: {
+      contact: require('./footer'),
+      copyright: require('./copyright'),
+    },
+    globalPagination: {
+      prevText:'Prev', 
+      nextText:'Next', 
+      lengthPerPage:'4', 
+      layout:'Pagination',
+    },
+    comment: {
+      service: 'vssue',
+      owner: 'huwenfeng',
+      repo: 'Your repo',
+      clientId: 'Your clientId',
+      clientSecret: 'Your clientSecret',
+    },
+    summaryLength: 100,
+    smoothScroll: true
   }
 }
