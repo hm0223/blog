@@ -47,10 +47,10 @@ module.exports = {plugins: {
     },
     comment: {
       service: 'vssue',
-      owner: 'huwenfeng',
-      repo: 'Your repo',
-      clientId: 'Your clientId',
-      clientSecret: 'Your clientSecret',
+      owner: 'hm0223',
+      repo: 'blog',
+      clientId: '1be8999631c439845b0d',
+      clientSecret: '1c284f05a4c1c9dd8ee6711bea8f93d160a21c0b',
     },
     summaryLength: 100,
     smoothScroll: true
