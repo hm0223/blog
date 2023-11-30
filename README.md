@@ -125,6 +125,18 @@ module.exports = {
 }
 ```
 
+4. 结合Github Action 实现自动 推送 Github Pages
+> see: https://blog.csdn.net/lancemao/article/details/126497147
+
+- Github 中的 Settings > Developer Settings > Personal access tokens (classic) > Token 申请 访问的 access_token
+- 在博客项目 blog 的 Settings 中 Secrets and variables 中 Actions 设置授权信息即上述获取到的 access_token
+- 创建一个 github workflows  详见: [.github/workflows/main.yml](./.github/workflows/main.yml) 中会使用到申请的 access_token
+
+编写完新的文档后, 推送master 则会触发 Github Action, 将博客静态资源文件推送至 `gh-pages` 分支 供 Github Pages 使用;
+```shell
+git push origin master 
+```
+
 <!-- *You might have noticed the **Back to top** button(if not, please notice, it's right there!). This is a good idea because it makes your README **easy to navigate.*** 
 
 The first one should be how to install(how to generally use your project or set-up for editing in their machine).
