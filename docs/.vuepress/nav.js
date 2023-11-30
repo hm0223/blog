@@ -1,18 +1,22 @@
 module.exports = [
     {
-        text: 'Blog',
-        link: '/',
+        text: 'Java',
+        link: '/java/',
+    },
+    {
+        text: 'JUnit',
+        link: '/junit/',
     },
     {
         text: 'Tags',
         link: '/tag/',
     },
     {
-        text: 'Github',
-        link: 'https://github.com/hm0223'
+        text: 'Blog',
+        link: '/',
     },
     {
-        text: 'Gitee',
-        link: 'https://gitee.com/hm223'
+        text: 'Github',
+        link: 'https://github.com/hm0223'
     },
 ]

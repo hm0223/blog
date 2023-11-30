@@ -14,10 +14,6 @@ module.exports = {
         },
     },
     title: "hwf's blog", // Title for the site. This will be displayed in the navbar.
-    head: [
-        ['link', {rel: 'icon', href: '/img/icon.jpg'}],
-        ['link', {rel: 'stylesheet', href: '/css/style.css'}],
-    ],
     theme: '@vuepress/theme-blog',
     base: '/blog/',
     themeConfig: {
