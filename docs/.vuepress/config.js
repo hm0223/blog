@@ -20,8 +20,8 @@ module.exports = {plugins: {
       // all other options of Vssue are allowed
       owner: 'hm0223',
       repo: 'blog',
-      clientId: 'YOUR_CLIENT_ID',
-      clientSecret: 'YOUR_CLIENT_SECRET',
+      clientId: '1be8999631c439845b0d',
+      clientSecret: '1c284f05a4c1c9dd8ee6711bea8f93d160a21c0b',
     },
   },
   title: "hwf's blog", // Title for the site. This will be displayed in the navbar.
