@@ -15,7 +15,7 @@ module.exports = {
     },
     title: "hwf's blog", // Title for the site. This will be displayed in the navbar.
     theme: '@vuepress/theme-blog',
-    base: '/',
+    base: '/blog/',
     themeConfig: {
         nav: require('./nav'),
         footer: {

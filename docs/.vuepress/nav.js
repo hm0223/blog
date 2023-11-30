@@ -15,8 +15,4 @@ module.exports = [
         text: 'Blog',
         link: '/',
     },
-    {
-        text: 'Github',
-        link: 'https://github.com/hm0223'
-    },
 ]
