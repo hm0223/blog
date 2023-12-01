@@ -245,6 +245,12 @@ public class AppTest {
 }
 ```
 
+Assertions和Assumptions都是JUnit5框架中的注解，用于辅助进行单元测试。
+
+Assertions是断言类，提供了一系列的静态方法，如assertTrue。当这些方法的参数为false时，会抛出AssertionFailedError异常，JUnit将抛出此异常的方法判定为失败。例如，你可以使用它来检查代码的输出是否符合预期。
+
+而Assumptions则是假设类，它的主要作用在于在测试方法运行之前，先设定一些程序运行的假设条件，只有当这些假设条件都满足时，测试方法才会被执行。例如，如果你的代码依赖于某些特定的环境变量或配置文件，你就可以使用Assumptions来确保这些前提条件的存在。
+
 > Read More: [JUnit 5 Assumptions](todo)
 
 
