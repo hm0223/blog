@@ -1,10 +1,11 @@
 ---
-title: Junit5 Tutorial
+title: Junit5
 date: 2023-12-01
 tags:
 - Java
 - Tutorial
 - Test
+- Junit5
 author: huwenfeng
 location: shanghai
 ---
@@ -189,6 +190,7 @@ public class JUnit5SuiteTest {
    //...
 }
 ```
+运行上述单元测试 会执行 `com.hm.junit5.samples.biz` 包下的所有单元测试。
 
 ## 6. JUnit 5 Assertions
 
