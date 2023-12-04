@@ -5,6 +5,18 @@ module.exports = [
         path: '/',
     },
     {
+        id: 'springboot',
+        dirname: '_posts/_springboot',
+        path: '/springboot/',
+        title: 'Spring Boot', 
+        layout: 'IndexWriting',
+        frontmatter: { 
+            tag: 'vuepress'
+        },
+        itemLayout: 'Spring Boot',
+        itemPermalink: '/springboot/:year/:month/:day/:slug',
+    },
+    {
         id: 'junit', // Unique id for current classifier
         dirname: '_posts/_junit', // Matched directory name
         path: '/junit/', // Entry page for current classifier
