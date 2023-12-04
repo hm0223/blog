@@ -4,6 +4,10 @@ module.exports = [
         link: '/java/',
     },
     {
+        text: 'Spring Boot',
+        link: '/springboot/',
+    },
+    {
         text: 'JUnit',
         link: '/junit/',
     },
